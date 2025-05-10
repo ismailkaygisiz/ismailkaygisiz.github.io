@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -869,6 +870,7 @@
 
       .project-info {
         padding: 25px;
+        padding-bottom: 60px;
       }
 
       .project-info h3 {
@@ -904,6 +906,9 @@
 
       .project-links {
         display: flex;
+        position: absolute;
+        bottom: 15px;
+        margin-bottom: 5px;
       }
 
       .project-links a {
@@ -1037,7 +1042,17 @@
 
       .timeline-content a {
         color: var(--neon-blue);
+        transition: color 0.3s;
       }
+
+      .timeline-content a:hover {
+        color: var(--neon-pink);
+      }
+
+      .timeline-link {
+        color: var(--neon-blue);
+      }
+
       /* Certificates Section */
       .certificates {
         background-color: var(--surface);
@@ -1799,8 +1814,6 @@
   </head>
 
   <body>
-    <div class="grid-lines"></div>
-
     <!-- Header -->
     <header>
       <div class="container">
@@ -1982,12 +1995,12 @@
                   <span class="project-tag">SQL Server</span>
                 </div>
                 <div class="project-links">
-                  <a
+                  <!-- <a
                     class="disable-link"
                     aria-disabled="true"
                     title="ReCapProject Demo"
                     ><span class="material-icons">visibility</span> Demo</a
-                  >
+                  > -->
                   <a
                     href="https://github.com/ismailkaygisiz/ReCapProject"
                     target="_blank"
@@ -2017,12 +2030,12 @@
                   <span class="project-tag">Google Translate API</span>
                 </div>
                 <div class="project-links">
-                  <a
+                  <!-- <a
                     class="disable-link"
                     aria-disabled="true"
                     title="WordHuntHackathon Demo"
                     ><span class="material-icons">visibility</span> Demo</a
-                  >
+                  > -->
                   <a
                     href="https://github.com/ismailkaygisiz/WordHuntHackathon"
                     target="_blank"
@@ -2052,12 +2065,12 @@
                   <span class="project-tag">SignalR</span>
                 </div>
                 <div class="project-links">
-                  <a
+                  <!-- <a
                     class="disable-link"
                     aria-disabled="true"
                     title="TransportathonHackathon Demo"
                     ><span class="material-icons">visibility</span> Demo</a
-                  >
+                  > -->
                   <a
                     href="https://github.com/ismailkaygisiz/TransportathonHackathon"
                     target="_blank"
@@ -2103,11 +2116,7 @@
                   geliştirdim ve gerçek dünya ihtiyaçlarına yönelik işlevsel,
                   kullanıcı odaklı yazılımlar tasarlayarak pratikte deneyim
                   kazandım. Ayrıca, bu süre zarfında<br />
-                  <a
-                    title="Word HuntHackathon Etkinlik Detayları"
-                    aria-disabled="true"
-                    >Word Hunt Hackathon</a
-                  >
+                  <span class="timeline-link">Word Hunt Hackathon</span>
                   yarışmasında, ekip arkadaşım ile birlikte birinci olarak büyük
                   bir başarı elde ettik. Aynı şirket tarafından düzenlenen<br />
                   <a
@@ -2159,6 +2168,7 @@
                   <img
                     src="assets/digiage-katilim-sertifikasi.png"
                     alt="DIGIAGE Oyun Geliştirme Kış Kampı, Bilişim Vadisi"
+                    loading="lazy"
                   /></div
               ></a>
               <div class="certificate-info">
@@ -2185,6 +2195,7 @@
                   <img
                     src="assets/flutter-kurs-bitirme-sertifikasi.jpg"
                     alt="Flutter ile Uygulama Geliştirme Kursu Android & IOS Bitirme Sertifikası"
+                    loading="lazy"
                   /></div
               ></a>
               <div class="certificate-info">
@@ -2215,6 +2226,7 @@
                   <img
                     src="assets/cisco-pcap-certificate.png"
                     alt="CISCO PCAP: Programming Essentials in Python Kursu Bitirme Sertifikası"
+                    loading="lazy"
                   /></div
               ></a>
               <div class="certificate-info">
@@ -2248,6 +2260,7 @@
                   <img
                     src="assets/meb-python-egitimi-kursu-sertifika.png"
                     alt="CISCO - MEB İş Birliğinde Düzenlenen Python Eğitimi Kursu Bitirme Sertifikası"
+                    loading="lazy"
                   /></div
               ></a>
               <div class="certificate-info">
@@ -2278,6 +2291,7 @@
                   <img
                     src="assets/trans-portathon-hackathon-sertifika.png"
                     alt="TransPortathon Hackathon Katılım Belgesi"
+                    loading="lazy"
                   /></div
               ></a>
               <div class="certificate-info">
@@ -2303,6 +2317,7 @@
                   <img
                     src="assets/word-hunt-hackathon-sertifika.png"
                     alt="Word Hunt Hackathon Katılım ve Birincilik Belgesi"
+                    loading="lazy"
                   /></div
               ></a>
               <div class="certificate-info">
